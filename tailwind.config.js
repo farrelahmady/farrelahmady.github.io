@@ -2,6 +2,15 @@ module.exports = {
 	content: ["index.html"],
 	theme: {
 		extend: {
+			container: {
+				center: true,
+				padding: {
+					DEFAULT: "1rem",
+					md: "4rem",
+					lg: "8rem",
+					xl: "12rem",
+				},
+			},
 			colors: {
 				dark: "#2F384A",
 				light: "#FFFDF8",
@@ -20,6 +29,7 @@ module.exports = {
 			},
 			fontFamily: {
 				inter: ["Inter"],
+				firaCode: ["Fira Code"],
 			},
 		},
 	},

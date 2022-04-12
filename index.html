@@ -5,14 +5,151 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Font Inter -->
+		<!-- Font -->
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- FontAwesome -->
+		<script
+			src="https://kit.fontawesome.com/3d342bf6aa.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- Tailwind -->
 		<link rel="stylesheet" href="./src/css/style.css" />
 		<title>I am Farrelahmady</title>
 	</head>
-	<body></body>
+	<body>
+		<!-- Header Start -->
+		<header class="bg-primary-300 fixed top-0 left-0 w-full z-10">
+			<div class="w-full px-3 md:px-12 xl:px-28">
+				<div class="flex items-center justify-between py-4 relative">
+					<a href="#home" class="text-lg font-black">Farrelahmady</a>
+					<div class="flex items-center">
+						<button id="hamburger" class="lg:hidden">
+							<span class="hamburger-line origin-top-left"></span>
+							<span class="hamburger-line"></span>
+							<span class="hamburger-line origin-bottom-left"></span>
+						</button>
+
+						<nav
+							id="nav-menu"
+							class="hidden absolute py-5 bg-white shadow-lg rounded-lg right-0 top-full max-w-xs w-full lg:py-0 lg:block lg:static lg:bg-transparent lg:shadow-none lg:max-w-full"
+						>
+							<ul class="block lg:flex">
+								<li class="group">
+									<a
+										href="#home"
+										class="text-base text-dark py-2 flex mx-8 hover:text-primary"
+										>Home</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#about"
+										class="text-base text-dark py-2 flex mx-8 hover:text-primary"
+										>About Me</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#portfolio"
+										class="text-base text-dark py-2 flex mx-8 hover:text-primary"
+										>Portfolio</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Hero Section Start -->
+		<section id="home" class="py-20 xl:py-32">
+			<div class="container">
+				<div
+					class="grid grid-row-2 items-center md:grid-cols-2 gap-10 md:gap-4 xl:gap-16"
+				>
+					<div class="">
+						<span
+							class="font-firaCode text-lg text-secondary-500 md:text-base xl:text-2xl"
+							>echo "Hello World! I'm"</span
+						>
+						<h1 class="text-3xl font-bold text-dark xl:text-5xl mt-2">
+							Farrel Ahmad Yudithia
+						</h1>
+						<h4
+							class="text-lg font-semibold text-[#717378] md:text-base xl:text-2xl"
+						>
+							Website Developer
+						</h4>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+							ipsam mollitia deserunt ex maxime cupiditate molestias eum harum
+							quo maiores.
+						</p>
+						<a href="#contact" class="btn">
+							<span class="btn-text">Contact Me</span>
+							<i class="fa-solid fa-paper-plane btn-text"></i>
+						</a>
+					</div>
+					<div class="w-full relative row-start-1 md:col-start-2">
+						<img
+							src="./src/img/me.png"
+							alt="farrelahmady"
+							class="w-10/12 mx-auto"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Hero Section End -->
+
+		<!-- About Section Start -->
+		<section id="about" class="py-4 xl:py-8">
+			<div class="container">
+				<h4 class="section-title">About Me</h4>
+				<div class="grid grid-row-2 md:grid-cols-2 gap-10 md:gap-4 xl:gap-16">
+					<div>
+						<h2 class="title">Interset in Website Development</h2>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+							deserunt vel libero ratione, sint nulla reiciendis fuga veritatis
+							autem cupiditate?
+						</p>
+					</div>
+					<div>
+						<h2 class="title">Let's Connect</h2>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+							maiores!
+						</p>
+						<div class="flex items-center gap-3 mt-3">
+							<!-- LinkedIn -->
+							<a
+								href="https://www.linkedin.com/in/farrel-ahmad-yudithia-09847a153/"
+								target="_blank"
+								class="icon-bg"
+							>
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<!-- Github -->
+							<a
+								href="https://github.com/farrelahmady"
+								target="_blank"
+								class="icon-bg"
+							>
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Section End -->
+
+		<script src="./src/js/script.js"></script>
+	</body>
 </html>

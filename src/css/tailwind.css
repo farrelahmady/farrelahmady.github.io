@@ -3,7 +3,58 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		scroll-behavior: smooth;
+	}
 	body {
 		@apply bg-primary-200 font-inter;
+	}
+
+	i {
+		@apply text-base md:text-xs xl:text-xl;
+	}
+
+	i {
+		@apply text-xl;
+	}
+}
+
+@layer components {
+	.section-title {
+		@apply text-lg font-bold text-secondary-500 md:text-base xl:text-2xl;
+	}
+	.title {
+		@apply text-2xl font-bold text-dark mb-4 xl:text-4xl;
+	}
+	.paragraph {
+		@apply text-sm mt-4 font-normal text-gray;
+	}
+	.icon-bg {
+		@apply w-10 h-10 rounded-full border flex justify-center items-center border-dark hover:border-secondary-500 hover:bg-secondary-500 hover:text-light active:bg-secondary-600;
+	}
+
+	.btn {
+		@apply flex items-center w-fit rounded-lg px-4 py-3 mt-6 gap-3 bg-secondary-500 hover:bg-secondary-400 text-light;
+	}
+	.btn-items {
+		@apply text-base font-semibold md:text-xs xl:text-xl;
+	}
+	.navbar-fixed {
+		@apply fixed z-[9999] bg-white bg-opacity-80 shadow-md;
+		backdrop-filter: blur(5px);
+	}
+
+	.hamburger-line {
+		@apply w-[30px] h-[2px] my-2 block bg-dark transition duration-300 ease-in-out;
+	}
+
+	.hamburger-active > span:nth-child(1) {
+		@apply rotate-45;
+	}
+	.hamburger-active > span:nth-child(3) {
+		@apply -rotate-45;
+	}
+	.hamburger-active > span:nth-child(2) {
+		@apply scale-0;
 	}
 }

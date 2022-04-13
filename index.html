@@ -15,15 +15,22 @@
 			src="https://kit.fontawesome.com/3d342bf6aa.js"
 			crossorigin="anonymous"
 		></script>
+		<!-- Swiper Style -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 		<!-- Tailwind -->
 		<link rel="stylesheet" href="./src/css/style.css" />
 		<title>I am Farrelahmady</title>
 	</head>
 	<body>
 		<!-- Header Start -->
-		<header class="bg-primary-300 fixed top-0 left-0 w-full z-10">
-			<div class="w-full px-3 md:px-12 xl:px-28">
-				<div class="flex items-center justify-between py-4 relative">
+		<header
+			class="bg-primary-300 absolute top-0 left-0 w-full z-10 px-3 md:px-12 xl:px-28"
+		>
+			<div class="">
+				<div class="flex items-center justify-between py-2 relative">
 					<a href="#home" class="text-lg font-black">Farrelahmady</a>
 					<div class="flex items-center">
 						<button id="hamburger" class="lg:hidden">
@@ -67,7 +74,7 @@
 		<!-- Header End -->
 
 		<!-- Hero Section Start -->
-		<section id="home" class="py-20 xl:py-32">
+		<section id="home" class="pt-20 xl:pt-32">
 			<div class="container">
 				<div
 					class="grid grid-row-2 items-center md:grid-cols-2 gap-10 md:gap-4 xl:gap-16"
@@ -108,7 +115,7 @@
 		<!-- Hero Section End -->
 
 		<!-- About Section Start -->
-		<section id="about" class="py-4 xl:py-8">
+		<section id="about" class="pt-32 pb-32">
 			<div class="container">
 				<h4 class="section-title">About Me</h4>
 				<div class="grid grid-row-2 md:grid-cols-2 gap-10 md:gap-4 xl:gap-16">
@@ -149,6 +156,52 @@
 			</div>
 		</section>
 		<!-- About Section End -->
+
+		<section id="portfolio" class="pt-16 pb-32">
+			<div class="container">
+				<div class="text-center">
+					<h4 class="section-title">Portfolio</h4>
+					<h2 class="title">Most Recent Works</h2>
+					<p id="ch"></p>
+				</div>
+				<div id="portfolio-swiper" class="swiper flex flex-col">
+					<div class="swiper-wrapper justify-center py-4">
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="https://source.unsplash.com/1600x900?technology/?beach"
+									alt=""
+								/>
+								<div class="p-4">
+									<h5 class="text-lg">Project 1</h5>
+									<p class="paragraph mt-1 max-h-24 overflow-auto">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Soluta nesciunt porro laboriosam explicabo incidunt atque,
+										ea veritatis quam corrupti asperiores deleniti consectetur
+										corporis eaque praesentium provident optio deserunt nemo
+										unde vero commodi dolorum sit quod natus expedita! Iure
+										maxime facilis quaerat est, voluptatem nesciunt earum
+										doloribus. Vero ad velit sit.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<i
+						id="prev"
+						class="fa-solid fa-angle-left absolute top-[50%] -translate-y-1/2 left-0 text-3xl text-secondary-500 xl:text-5xl z-10"
+					></i>
+					<i
+						id="next"
+						class="fa-solid fa-angle-right absolute top-[50%] -translate-y-1/2 right-0 text-3xl text-secondary-500 xl:text-5xl z-10"
+					></i>
+				</div>
+				<div id="swiper-pagination" class="swiper-pagination relative"></div>
+			</div>
+		</section>
+
+		<!-- Swiper Script -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 		<script src="./src/js/script.js"></script>
 	</body>

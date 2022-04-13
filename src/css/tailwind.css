@@ -39,22 +39,46 @@
 	.btn-items {
 		@apply text-base font-semibold md:text-xs xl:text-xl;
 	}
-	.navbar-fixed {
-		@apply fixed z-[9999] bg-white bg-opacity-80 shadow-md;
-		backdrop-filter: blur(5px);
-	}
+}
 
-	.hamburger-line {
-		@apply w-[30px] h-[2px] my-2 block bg-dark transition duration-300 ease-in-out;
-	}
+.navbar-fixed {
+	@apply fixed z-[9999] bg-primary-500 bg-opacity-50 transition duration-500 shadow-md;
+	backdrop-filter: blur(5px);
+}
 
-	.hamburger-active > span:nth-child(1) {
-		@apply rotate-45;
-	}
-	.hamburger-active > span:nth-child(3) {
-		@apply -rotate-45;
-	}
-	.hamburger-active > span:nth-child(2) {
-		@apply scale-0;
-	}
+.hamburger-line {
+	@apply w-[30px] h-[2px] my-2 block bg-dark transition duration-300 ease-in-out;
+}
+
+.hamburger-active > span:nth-child(1) {
+	@apply rotate-45;
+}
+.hamburger-active > span:nth-child(3) {
+	@apply -rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+	@apply scale-0;
+}
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+	@apply bg-secondary-500;
+}
+#swiper-pagination {
+	@apply -bottom-4;
+}
+
+.swiper-slide {
+	@apply h-auto px-12;
+}
+
+.card {
+	@apply h-full bg-white rounded-lg shadow-lg overflow-hidden;
+}
+
+.card *::-webkit-scrollbar {
+	display: none;
 }

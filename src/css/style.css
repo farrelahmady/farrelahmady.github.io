@@ -774,6 +774,14 @@ input::placeholder, textarea::placeholder {
   display: none;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-44 {
   height: 11rem;
 }
@@ -843,6 +851,10 @@ input::placeholder, textarea::placeholder {
   overflow: auto;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -855,6 +867,11 @@ input::placeholder, textarea::placeholder {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 56 74 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#4C4637\] {
@@ -1053,8 +1070,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .card {
-  display: block;
+  display: flex;
   height: 100%;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;

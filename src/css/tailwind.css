@@ -86,7 +86,7 @@
 }
 
 .card {
-	@apply block h-full bg-white rounded-lg shadow-md overflow-hidden transition;
+	@apply flex flex-col  h-full bg-white rounded-lg shadow-md overflow-hidden transition;
 }
 
 .card.active {

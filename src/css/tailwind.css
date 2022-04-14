@@ -17,6 +17,16 @@
 	i {
 		@apply text-xl;
 	}
+
+	input,
+	textarea {
+		@apply w-full rounded-lg bg-dark text-light p-3 focus:outline-none;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		@apply text-slate-300;
+	}
 }
 
 @layer components {
@@ -34,9 +44,9 @@
 	}
 
 	.btn {
-		@apply flex items-center w-fit rounded-lg px-4 py-3 mt-6 gap-3 bg-secondary-500 hover:bg-secondary-400 text-light;
+		@apply flex items-center w-fit rounded-lg px-4 py-3 gap-3 bg-secondary-500 hover:bg-secondary-400 text-light;
 	}
-	.btn-items {
+	.btn-text {
 		@apply text-base font-semibold md:text-xs xl:text-xl;
 	}
 }
@@ -68,15 +78,19 @@
 	@apply bg-secondary-500;
 }
 #swiper-pagination {
-	@apply -bottom-4;
+	@apply -bottom-0;
 }
 
 .swiper-slide {
-	@apply h-auto px-12;
+	@apply h-auto mx-auto px-12;
 }
 
 .card {
-	@apply h-full bg-white rounded-lg shadow-lg overflow-hidden;
+	@apply block h-full bg-white rounded-lg shadow-md overflow-hidden transition;
+}
+
+.card.active {
+	@apply shadow-lg scale-110;
 }
 
 .card *::-webkit-scrollbar {

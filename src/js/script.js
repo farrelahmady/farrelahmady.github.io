@@ -44,3 +44,40 @@ var swiper = new Swiper("#portfolio-swiper", {
 		prevEl: "#prev",
 	},
 });
+
+const cards = document.querySelectorAll(".card");
+if (cards.length != 0) {
+	cards.forEach((card) => {
+		const autoScroll = () => {
+			const p = card.querySelector("p");
+			let maxScroll = p.scrollHeight - p.clientHeight;
+			if (maxScroll != 0) {
+				const scroll = setInterval(() => {
+					p.scrollTop += 1;
+					p.scrollTop == maxScroll ? clearInterval(scroll) : [];
+				}, 50);
+
+				p.onwheel = () => {
+					clearInterval(scroll);
+				};
+				card.onmouseout = () => {
+					card.classList.remove("active");
+					clearInterval(scroll);
+				};
+				card.ontouchend = () => {
+					card.classList.remove("active");
+					clearInterval(scroll);
+				};
+			}
+			// console.log(maxScroll);
+		};
+		card.addEventListener("mouseover", () => {
+			card.classList.add("active");
+			autoScroll();
+		});
+		card.addEventListener("touchstart", () => {
+			card.classList.add("active");
+			autoScroll();
+		});
+	});
+}

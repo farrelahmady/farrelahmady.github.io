@@ -31,7 +31,11 @@
 		>
 			<div class="">
 				<div class="flex items-center justify-between py-2 relative">
-					<a href="#home" class="text-lg font-black">Farrelahmady</a>
+					<a
+						href="#home"
+						class="text-lg text-dark font-bold hover:text-secondary-600"
+						>Farrelahmady</a
+					>
 					<div class="flex items-center">
 						<button id="hamburger" class="lg:hidden">
 							<span class="hamburger-line origin-top-left"></span>
@@ -47,22 +51,29 @@
 								<li class="group">
 									<a
 										href="#home"
-										class="text-base text-dark py-2 flex mx-8 hover:text-primary"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
 										>Home</a
 									>
 								</li>
 								<li class="group">
 									<a
 										href="#about"
-										class="text-base text-dark py-2 flex mx-8 hover:text-primary"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
 										>About Me</a
 									>
 								</li>
 								<li class="group">
 									<a
 										href="#portfolio"
-										class="text-base text-dark py-2 flex mx-8 hover:text-primary"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
 										>Portfolio</a
+									>
+								</li>
+								<li class="group">
+									<a
+										href="#contact"
+										class="text-base font-medium text-dark py-2 flex mx-8 hover:font-bold"
+										>Contact</a
 									>
 								</li>
 							</ul>
@@ -97,7 +108,7 @@
 							ipsam mollitia deserunt ex maxime cupiditate molestias eum harum
 							quo maiores.
 						</p>
-						<a href="#contact" class="btn">
+						<a href="#contact" class="btn mt-6">
 							<span class="btn-text">Contact Me</span>
 							<i class="fa-solid fa-paper-plane btn-text"></i>
 						</a>
@@ -157,7 +168,8 @@
 		</section>
 		<!-- About Section End -->
 
-		<section id="portfolio" class="pt-16 pb-32">
+		<!-- Portfolio Section Start -->
+		<section id="portfolio" class="pt-16 pb-24">
 			<div class="container">
 				<div class="text-center">
 					<h4 class="section-title">Portfolio</h4>
@@ -165,9 +177,9 @@
 					<p id="ch"></p>
 				</div>
 				<div id="portfolio-swiper" class="swiper flex flex-col">
-					<div class="swiper-wrapper justify-center py-4">
+					<div class="swiper-wrapper py-8">
 						<div class="swiper-slide">
-							<div class="card">
+							<a href="#" class="card">
 								<img
 									src="https://source.unsplash.com/1600x900?technology/?beach"
 									alt=""
@@ -176,15 +188,12 @@
 									<h5 class="text-lg">Project 1</h5>
 									<p class="paragraph mt-1 max-h-24 overflow-auto">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-										Soluta nesciunt porro laboriosam explicabo incidunt atque,
-										ea veritatis quam corrupti asperiores deleniti consectetur
-										corporis eaque praesentium provident optio deserunt nemo
-										unde vero commodi dolorum sit quod natus expedita! Iure
-										maxime facilis quaerat est, voluptatem nesciunt earum
-										doloribus. Vero ad velit sit.
+										Quod architecto repellat iure delectus voluptates ipsa quas,
+										placeat commodi vel doloribus eos minima perferendis aut.
+										Labore odit at quos dolores est!
 									</p>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<i
@@ -199,6 +208,74 @@
 				<div id="swiper-pagination" class="swiper-pagination relative"></div>
 			</div>
 		</section>
+		<!-- Portfolio Section End -->
+
+		<!-- Contact Section Start -->
+		<section id="contact" class="pt-16 pb-32">
+			<div class="container">
+				<div class="text-center">
+					<h4 class="section-title">Contact</h4>
+					<h2 class="title">Let's Get in Touch</h2>
+					<p id="ch"></p>
+				</div>
+				<div class="flex flex-col items-center gap-8 xl:px-32">
+					<input type="text" id="name" name="name" placeholder="Name" />
+					<input type="email" id="email" name="email" placeholder="Email" />
+					<textarea
+						name="message"
+						id="message"
+						class="h-44"
+						placeholder="Message"
+					></textarea>
+					<button class="btn btn-text">
+						Send Message<i class="fa-solid fa-paper-plane btn-items"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- Contact Section End -->
+
+		<!-- Footer Start -->
+		<footer class="py-16 bg-[#4C4637]">
+			<div
+				class="w-full px-4 flex flex-col gap-8 text-light lg:flex-row lg:px-16 xl:px-32"
+			>
+				<div class="w-full">
+					<h4 class="text-2xl font-bold mb-2">Farrel Ahmad Yudithia</h4>
+					<h6 class="text-base font-semibold">
+						Jl. Tirto Agung Barat IV No.6, Pedalangan, Banyumanik
+					</h6>
+					<h6 class="text-base font-semibold">Semarang</h6>
+				</div>
+				<div class="w-full">
+					<h4 class="text-2xl font-bold mb-2">Section</h4>
+					<div class="flex flex-col gap-2 text-base font-semibold">
+						<a href="#about">About</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+				<div class="w-full">
+					<h4 class="text-2xl font-bold mb-2">Social Media</h4>
+					<div class="flex gap-4">
+						<a
+							href="https://www.linkedin.com/in/farrel-ahmad-yudithia-09847a153/"
+							target="_blank"
+						>
+							<i
+								class="fa-brands fa-linkedin text-2xl hover:text-secondary-500"
+							></i>
+						</a>
+						<a href="https://github.com/farrelahmady" target="_blank">
+							<i
+								class="fa-brands fa-github text-2xl hover:text-secondary-500"
+							></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer End -->
 
 		<!-- Swiper Script -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
